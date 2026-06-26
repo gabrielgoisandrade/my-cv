@@ -1,0 +1,24 @@
+{
+    "extends": [
+        "stylelint-config-standard-scss",
+        "stylelint-config-recess-order",
+        "stylelint-plugin-defensive-css/configs/recommended"
+    ],
+    "plugins": ["stylelint-plugin-defensive-css"],
+    "rules": {
+        "scss/dollar-variable-pattern": null,
+        "custom-property-pattern": null,
+        "selector-class-pattern": null,
+        "plugin/use-defensive-css": [
+            true,
+            {
+                "severity": "warning",
+                "flex-wrapping": true,
+                "background-repeat": true
+            }
+        ],
+        "plugin/selector-bem-pattern": {
+            "preset": "bem"
+        }
+    }
+}
